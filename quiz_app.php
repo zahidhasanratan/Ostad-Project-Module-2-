@@ -1,8 +1,8 @@
 <?php
 function evaluateQuiz(array $questions, array $answers): int {
     $score = 0;
-    foreach ($questions as $index => $question) {
-        if ($answers[$index] === $question['correct']) {
+    foreach ($questions as $key => $question) {
+        if ($answers[$key] === $question['correct']) {
             $score++;
         }
     }
